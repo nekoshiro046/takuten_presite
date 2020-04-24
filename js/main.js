@@ -1,10 +1,16 @@
 $(function() {
 	$('html,body').animate({ scrollTop: 0 }, '1');
-	$("nav").hide().fadeIn(5000);
-	new Vivus('canvas', {start: 'autostart', type: 'delayed', duration: 150}); 
+	$("nav").hide().fadeIn(5800);
+	// new Vivus('canvas', {start: 'autostart', type: 'delayed', duration: 150}); 
+	var vivusLogo = new Vivus('canvas', {start: 'manual', type: 'delayed', duration: 150}); 
+	setTimeout(function(){
+        vivusLogo.play(1);
+    },1000);
 	// new Vivus('canvas', {start: 'autostart', type: 'scenario-sync', duration: 25});
 });
+function empty(){
 
+}
 var navBtnActive = 0;//0:閉じ 1:開く
 $(document).on('click','.menuIcon', function() {
 	if(navBtnActive == 0){
