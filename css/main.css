@@ -31,7 +31,7 @@ header{
 }
 nav{
   font-family: 'arial','Landmark','sans-serif','Impact';
-  position: absolute;
+  position: fixed;
   z-index: 1;
   text-stroke: 1px #000;
   -webkit-text-stroke: 0.5px #000;
@@ -41,14 +41,17 @@ nav{
   transform: rotate(-90deg);
 
   bottom: 25%;
+  right: 320px;
   z-index: 10;
   margin: 0;
   padding: 0;
-  height: 0;
-  width:1vw;
+  height: 25%;
+  width: 20%;
 }
 @media screen and (max-width: 480px) { 
   nav{
+    position: absolute;
+    right: 0;
     bottom: 25%;
     z-index: 10;
     margin: 0;
@@ -97,6 +100,12 @@ ul {
   max-width: 600px;
   height: auto;
   margin-top: 10vh;
+  margin-left: 10vw;
+}
+@media screen and (max-width: 480px) { 
+  #canvas{
+    margin-left: 0;
+  }
 }
 .line {
   stroke: #000000;
@@ -151,9 +160,20 @@ ul {
   text-stroke: 1px #000;
   -webkit-text-stroke: 0.5px #000;
   float: right;
-  margin-right: 5%;
-  right: 0;
+  margin-right: 0;
+  right: 100px;
   z-index: 20;
+}
+@media screen and (max-width: 480px) { 
+  .menu_Logo{
+    color: #fff;
+    text-stroke: 1px #000;
+    -webkit-text-stroke: 0.5px #000;
+    float: right;
+    margin-right: 5%;
+    right: 0;
+    z-index: 20;
+  }
 }
 .menu{
   color: #fff;
@@ -165,8 +185,14 @@ ul {
   padding-right: 20%;
   margin: 0;
   /*position: fixed;*/
-  font-size: 60px;
+  font-size: 90px;
   /*float: right;*/
+}
+@media screen and (max-width: 480px) { 
+  .menu{
+    padding-right: 20%;
+    font-size: 60px;
+  }
 }
 .menu__button{
   position: relative;
@@ -244,7 +270,7 @@ ul {
   position: relative;
   border-left: solid 0.5px #000;
 }
-.paragraph-box h1{
+.paragraph-box h1, .project-box h1{
   text-align: center;
 }
 .roundText{
@@ -272,6 +298,7 @@ ul {
   vertical-align: middle;
 }
 .About_img{
+  position: relative;
   max-height: 80vh; 
   width: auto;
   /*width: 80%;
@@ -288,25 +315,57 @@ ul {
   }
 }
 .About_text{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  display: block;
+
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  top: 40%;
+  left: 10%;
+  background-color: #fff;
+  /*margin-left: 10%;*/
+}
+@media screen and (max-width: 480px) { 
+  .About_text{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: auto;
+    margin-left: 2%;
+    background-color: transparent;
+  }
+}
+.Info_text{
   width: 80%;
   height: auto;
   display: block;
   /*text-align: center;*/
   margin: 0 auto;
+  top: 50%;
+  background-color: #fff;
   /*margin-left: 10%;*/
 }
 @media screen and (max-width: 480px) { 
-  .About_text{
+  .Info_text{
     width: 99%;
     height: auto;
     margin-left: 2%;
+    background-color: transparent;
   }
 }
 .ProjectContents{
-  width: 100%;
+  width: 60%;
   margin-left: 0;
   padding: 5% 0;
   position: relative;
+}
+@media screen and (max-width: 480px) { 
+  .ProjectContents{
+    width: 100%;
+  }
 }
 .oneProject{
   width: 80%;
@@ -325,13 +384,21 @@ ul {
   margin-left: 10%;
 }
 .ProjectContents_logoImg{
-  width: 60%;
+  width: 80%;
   height: auto;
-  max-height: 25vh;
+  max-height: 40vh;
   width: auto;
   display: block;
   margin: 0 auto;
   margin-top: 5%;
+}
+@media screen and (max-width: 480px) { 
+  .ProjectContents_logoImg{
+    width: 60%;
+    height: auto;
+    max-height: 25vh;
+    width: auto;
+  }
 }
 .copyright{
 }
