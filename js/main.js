@@ -2,7 +2,7 @@ $(function() {
 	$('html,body').animate({ scrollTop: 0 }, '1');
 	$("nav").hide().fadeIn(5800);
 	// new Vivus('canvas', {start: 'autostart', type: 'delayed', duration: 150}); 
-	var vivusLogo = new Vivus('canvas', {start: 'manual', type: 'delayed', duration: 150}); 
+	var vivusLogo = new Vivus('canvas', {start: 'manual', type: 'delayed', duration: 200}); 
 	setTimeout(function(){
         vivusLogo.play(1);
     },1000);
