@@ -182,18 +182,27 @@ ul {
   /*transform: rotate(90deg);*/
   /*margin-right: 5%;
   margin-bottom: 5%;*/
-  padding-right: 20%;
+  padding: 0;
+  /*padding-right: 20%;*/
   margin: 0;
   /*position: fixed;*/
   font-size: 90px;
   /*float: right;*/
+}
+.menu:hover{
+  transition:0.5s;
+  background-color: #b9d7fb;
 }
 @media screen and (max-width: 480px) { 
   .menu{
     padding-right: 20%;
     font-size: 60px;
   }
+  .menu:hover{
+    background-color: transparent;
+  }
 }
+
 .menu__button{
   position: relative;
   width: 60px;
@@ -399,6 +408,21 @@ ul {
     max-height: 25vh;
     width: auto;
   }
+}
+.slideBox{
+  width: 25%;
+  max-width: 100px;
+  display: block;
+  margin: 0 auto; 
+  margin-top: 2vh;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  color: #FFF;
+  background: #000;
+  /*background: #EBECF0;*/
+  /*background: #f1f1f1;
+  box-shadow:  2px 2px 20px #f0f0f0, -5px -5px 20px #ffffff;*/
 }
 .copyright{
 }
