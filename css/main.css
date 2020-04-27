@@ -325,20 +325,24 @@ ul {
 }
 .About_text{
   position: absolute;
-  width: 80%;
+  width: 40%;
   height: auto;
   display: block;
-
+  padding-top: 5%;
+  padding-bottom: 5%;
   /*text-align: center;*/
   /*margin: 0 auto;*/
-  top: 40%;
+  top: 50%;
   left: 10%;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.85);
   /*margin-left: 10%;*/
 }
+
+
 @media screen and (max-width: 480px) { 
   .About_text{
     position: relative;
+    padding: 0;
     top: 0;
     left: 0;
     width: 99%;
